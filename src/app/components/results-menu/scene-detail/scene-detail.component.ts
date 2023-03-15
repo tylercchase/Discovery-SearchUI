@@ -374,7 +374,7 @@ export class SceneDetailComponent implements OnInit, OnDestroy {
       if (!!dateRange.start) {
         this.store$.dispatch(new filtersStore.SetStartDate(new Date(dateRange.start)));
       }
-      if (!!dateRange.end) {
+      if (!!this.dateRange.end) {
         this.store$.dispatch(new filtersStore.SetEndDate(new Date(dateRange.end)));
       }
 
